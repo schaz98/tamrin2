@@ -1,14 +1,17 @@
 body {
-  background-color: #ffe9e3;
+  background: linear-gradient(144.34deg, #3d4c72 20.89%, #1c243e 90.15%);
+  background-image: url(https://images.pexels.com/photos/15328421/pexels-photo-15328421/free-photo-of-clouds-and-fog-over-forest.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #0f0f0f;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 h1 {
-  color: #c9356c;
-  font-size: 24px;
-  font-weight: 100;
-  line-height: 28px;
-  margin-bottom: 0;
+  display: block;
+  font-size: 30px;
+  margin-top: 32px;
+  font-weight: 500;
 }
 ul {
   margin: 0;
@@ -20,15 +23,38 @@ li {
   margin: 0;
   padding: 0;
 
-  color: rgb(135, 135, 135);
+  color: black;
   font-size: 16px;
   font-weight: 100;
   line-height: 20px;
 }
 
-.name {
-  text-align: center;
+a {
+  text-decoration: none;
+  color: #596e79;
 }
+
+a:hover {
+  text-decoration: none;
+  color:white;
+}
+
+a:active {
+  font-weight: 600;
+}
+
+footer {
+  margin: 32px;
+  font-size: 12px;
+  color: #596e79;
+  
+  text-align: center;
+
+}
+
+
+
+
 .weather-app-wrapper {
   max-width: 800px;
   margin: 50px auto;
@@ -57,7 +83,21 @@ li {
   text-align: center;
 }
 
+input[type="text"] {
+  color: white;
+  background: linear-gradient(
+    168.44deg,
+    rgba(46, 51, 90, 0.26) 1.62%,
+    rgba(28, 27, 51, 0.26) 95.72%
+  );
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  border: 1px solid #4e2c8b;
+}
 .btn {
+  color: white;
+  background-color: #212121;
+  border-color: #0f0f0f;
   width: 100px;
   float: right;
   margin-top: 0px;
@@ -71,11 +111,11 @@ li {
 }
 #date {
   display: block;
-  margin: 0px auto;
-  text-align: center;
-  font-family: "Abel";
-  font-size: 22px;
-  color: black;
+  color: #596e79;
+  font-weight: 600;
+  margin-bottom: 25px;
+ 
+  
 }
 #description {
   display: block;
@@ -90,7 +130,7 @@ li {
   flex-basis: 50%;
   font-family: "Abel";
   font-size: 18px;
-  color: black;
+  color: #727C88;
   margin: 10px auto;
 }
 #wind {
@@ -98,12 +138,12 @@ li {
   flex-basis: 50%;
   font-family: "Abel";
   font-size: 18px;
-  color: black;
+  color: #727C88;
   margin: 10px auto;
 }
 .temperature {
   font-size: 100px;
-  color: aqua;
+  color: #727C88;
 }
 .weather-temperature img {
   margin-right: 5px;
